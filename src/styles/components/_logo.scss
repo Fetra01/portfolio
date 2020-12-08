@@ -1,14 +1,24 @@
 .logo {
-    display: block;
-    float: left;
-    font-size: 1.2em;
-    text-decoration: none;
-    margin-top: 10px;
-    line-height: normal;
+    justify-content: start;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 1.1rem;
+
+    &:hover {
+        color: $white;
+    }
+    .logo-name {
+        font-family: "Agustina Regular";
+        font-weight: bold;
+        padding: 0 10px;
+    }
 }
 
-.logo .logo-name {
-    font-family: "Agustina Regular";
-    font-weight: bold;
-    padding: 0 10px;
+@media screen and (max-width: 960px) {
+    .logo{
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(0%, 80%);
+    }
 }

@@ -5,7 +5,7 @@ const Home = () => {
     const [state] = React.useState({
         title: 'I am Fetra ANDRIAMAHALY',
         text: "i'm Fetra, professionnal web developer with long time experience in this field",
-        image:'/media/manOnTable.svg'
+        image:'/media/programmer.svg'
     })
 
     return (
@@ -13,16 +13,16 @@ const Home = () => {
             <div className="container">
                 <div className="row">
                     <div className="col-6">
-                        <div className="home__content">
-                            <div className="home__section">
-                                <ul className="home__ul">
+                        <div className="home-content">
+                            <div className="home-section">
+                                <ul className="home-ul">
                                     <li><FaFacebookF className="icon" /></li>
                                     <li><FaGithub  className="icon"/></li>
                                     <li><FaLinkedin className="icon"/></li>
                                 </ul>
                                 <h1>{state.title}</h1>
                                 <p>{state.text}</p>
-                                <div className="home__buttons">
+                                <div className="home-buttons">
                                     <a href="https://www.google.com" className="btn btn-outline">My Portfolio</a>
 
                                     &nbsp;&nbsp;&nbsp;
@@ -34,12 +34,12 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="col-6">
-                        <div className="home__img">
+                        <div className="home-img">
                             <img src={state.image} alt="man-on-table"/>
                         </div>
                     </div>
                 </div>
-            </div>            
+            </div>        
         </div>
     );
 };

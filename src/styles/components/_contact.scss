@@ -1,0 +1,140 @@
+.contact {
+    .container {
+        border: 2px solid $black;
+        
+        .contact-content{
+            width: 100%;
+            height: 80vh;
+            background: url(../../media/map.jpg) no-repeat center top/cover;
+            //background-color: $color3;
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 20% 45% 35%;
+            grid-template-areas: 
+                "2"
+                "3"
+            ;
+        
+            .contact-box {
+                grid-area: 2;
+                margin: 0 auto;
+                padding: 1rem 3rem;
+                z-index: 2;
+                background: transparent;
+                border-radius: $borderRadius;
+               // box-shadow: 0 3px 3px $color1;
+                width: 50%;
+                min-width: 440px;
+                min-height: 200px;
+                
+                ul {
+                    
+                    height: 80%;
+                    width: inherit;
+                    display: grid;
+                    margin-top: 1rem;
+                }
+        
+                li {
+                    position: relative;
+                    padding-bottom: 5rem;
+                }
+        
+                i {
+                    font-size: 2rem;
+                    position: absolute;
+                    transform: translateY(-3px);
+                    width: 50px;
+                    height: 50px;
+                    border: 2px solid $black ;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                }
+        
+                span {
+                    font-size: 2rem;
+                    position: absolute;
+                    transform: translateX(72px);
+                    background: transparent;
+                    width: 350px;
+                    transition: .2s ease;
+                    border: none;
+                    outline: none;
+                    color: $black;
+                }
+        
+                .clickInput:hover {
+                    transform: translateX(56px);
+                    cursor: pointer;
+                }
+            }
+        
+            .contact-socialNetwork {
+                grid-area: 3;
+                @include verticalCenter;
+        
+                ul {
+                    display: flex;
+                    text-align: center;
+                    width: 100%;
+                    justify-content: space-around;
+                }
+        
+                a {
+                    width: 20%;
+                    font-size: 1.4rem;
+                    //background: $color2;
+                    //border-radius: $borderRadius;
+                    display: inline-block;
+                    padding: 0.7rem 0;
+                   
+                }
+        
+                h3 {
+                    padding-bottom: 1rem;
+                }
+        
+                i {
+                    font-size: 25px !important;
+                    width: 50px;
+                    height: 50px;
+                    border: 2px solid $black ;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin:  0 40%;
+                }
+                
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .contact__content {
+      width: 100% !important;
+      min-height: 830px !important;
+    }  
+}
+
+@media screen and (max-width: 500px) {
+    .contact__content {
+      min-height: 640px !important;
+      .contact__box {
+        min-width: 100% !important;
+      }
+  
+      span {
+        font-size: .9rem !important;
+      }
+  
+      h4 {
+        font-size: .8rem;
+      }
+    }
+  }

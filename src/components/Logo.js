@@ -4,7 +4,7 @@ const Logo = () => {
     return (
         <div className="logo">
             <span>&lt;</span>
-                <span className="logo-name">Fetra Andriamahaly</span>
+                <a href="/" className="logo-name">Fetra Andriamahaly</a>
             <span>/&gt;</span>
         </div>
     );
